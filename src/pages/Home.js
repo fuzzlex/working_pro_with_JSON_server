@@ -1,15 +1,14 @@
 import { Button } from 'react-bootstrap';
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux';
+import {  useSelector } from 'react-redux';
 import { fetchAllData } from '../redux/actions/SubjActions';
 
 const Home = () => {
     const navigate = useNavigate()
-    const dispatch = useDispatch();
-
+    
     useEffect( () => {
-     dispatch(fetchAllData())
+      return fetchAllData
     }, []);
 
     const filteredList = useSelector(state =>state.Reducer.productList)
