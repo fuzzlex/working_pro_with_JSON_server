@@ -1,0 +1,60 @@
+{
+  "dersler": [
+    {
+      "id": 1,
+      "main": "Alan",
+      "subjects": [
+        {
+          "subj": "Canlıların Sınıflandırılması (%8)",
+          "id": 12,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Genetik ve Evrim (%16)",
+          "id": 454,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Genetik ve Evrim (%16)",
+          "id": 465,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Alan Eğitimi Testi %20",
+          "id": 564,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "main": "Eğitim",
+      "day": "Feb 6th at 1:30pm",
+      "isDone": false
+    },
+    {
+      "main": "Genel Kültür Genel Yetenek",
+      "day": "Feb 10th at 3:00pm",
+      "isDone": false,
+      "id": 3
+    },
+    {
+      "main": "Denemeler",
+      "day": "Feb 7th at 10:00pm",
+      "isDone": false,
+      "id": 4
+    }
+  ]
+}
