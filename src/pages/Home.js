@@ -1,5 +1,5 @@
 import { Button } from 'react-bootstrap';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAllData } from '../redux/actions/SubjActions';
