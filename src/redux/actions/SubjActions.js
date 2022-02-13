@@ -9,7 +9,7 @@ export const setShopActionFetch = (payload) => ({ type: FETCH_ALL, state:payload
 
 export const fetchAllData = () =>{
   return async dispatch =>{
-    const res = await fetch(`http://localhost:5000/dersler/`)
+    const res = await fetch(`https://workingpro.herokuapp.com/dersler/`)
     .then(res => res.json())
     .then(data => dispatch(setShopActionFetch(data)))    
   }
