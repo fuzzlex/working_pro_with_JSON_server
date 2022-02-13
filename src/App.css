@@ -14,11 +14,18 @@
 .alan-list-subj {
   margin: 0.4rem;
   text-align: center;
-  color: blue;
+  color: rgb(255, 0, 170);
   font-size: 1.1rem;
   font-weight: 500;
   letter-spacing: 2px;
   cursor: pointer;
+  background-color: rgba(0, 247, 255, 0.219);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.progresBar{
+  min-width: 50vw;
 }
 .checkbox{
   font-size: larger;

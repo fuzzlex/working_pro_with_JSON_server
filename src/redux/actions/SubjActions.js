@@ -9,10 +9,9 @@ export const setShopActionFetch = (payload) => ({ type: FETCH_ALL, state:payload
 
 export const fetchAllData = () =>{
   return async dispatch =>{
-     await fetch(`http://localhost:5000/dersler/`)
+    const res = await fetch(`http://localhost:5000/dersler/`)
     .then(res => res.json())
-    .then(data => dispatch(setShopActionFetch(data)))
-    
+    .then(data => dispatch(setShopActionFetch(data)))    
   }
 }
 

@@ -46,10 +46,10 @@ const Alan = () => {
             key={task.id}
             onClick={() => handleSubj(task.id)}
             className="alan-list-subj"
-            variant="info"
+            variant="dark"
           >
             {task.subj}
-            <ProgressBar animated now={task.targetRate} label={task.target !== 0 ? "% " + task.targetRate : "Henüz Başlatılmadı"} />
+            <ProgressBar className="progresBar" animated now={task.targetRate} label={task.target !== 0 ? "% " + task.targetRate : "Henüz Başlatılmadı"} />
             <Button className='m-2' variant={task.isDone ? "success" : "danger"}>{task.isDone ? "Konu Tamamlandı" : "Konu eksik"}</Button>
           </ListGroup.Item>
         ))}

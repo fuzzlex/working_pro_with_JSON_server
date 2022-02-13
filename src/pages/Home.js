@@ -3,16 +3,18 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'
 import {  useSelector } from 'react-redux';
 import { fetchAllData } from '../redux/actions/SubjActions';
+import { useDispatch } from 'react-redux';
 
 const Home = () => {
     const navigate = useNavigate()
+    const dispatch = useDispatch()
     
-    useEffect( () => {
-      return fetchAllData
-    }, []);
+    useEffect( () => (
+     dispatch(fetchAllData())
+    ), []);
 
     const filteredList = useSelector(state =>state.Reducer.productList)
-
+    console.log(filteredList)
     const handleAlan = (newId) => {
     
       navigate("/alan", {state : {newId}})

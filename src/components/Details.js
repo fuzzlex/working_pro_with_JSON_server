@@ -50,6 +50,7 @@ const Details = () => {
     listSubj.targetDone =  0;
     listSubj.targetRate = 0;
     listSubj.target = 0;
+    listSubj.isDone = false;
     await axios.put(`http://localhost:5000/dersler/${itemList.newId}`, newList)
     navigate("/alan", {state : {newId}})
   }  
@@ -66,7 +67,7 @@ const Details = () => {
 
 
     <Form key = {e.id}>
-    <Alert variant='warning'>
+    <Alert variant='warning' style={{textAlign:"center"}}>
     <Form.Check 
     type="switch"
     id="custom-switch"

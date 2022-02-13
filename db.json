@@ -5,15 +5,15 @@
       "main": "Alan",
       "subjects": [
         {
-          "subj": "Canlıların Sınıflandırılması (%8)",
+          "subj": "Canlıların Ortak Özellikleri",
           "id": 12,
-          "isDone": false,
-          "target": 0,
-          "targetDone": 0,
-          "targetRate": 0
+          "isDone": true,
+          "target": 10,
+          "targetDone": 2,
+          "targetRate": 20
         },
         {
-          "subj": "Genetik ve Evrim (%16)",
+          "subj": "Orgabik ve İnorganik Bileşikler",
           "id": 454,
           "isDone": false,
           "target": 0,
@@ -21,7 +21,7 @@
           "targetRate": 0
         },
         {
-          "subj": "Genetik ve Evrim (%16)",
+          "subj": "Enzimler",
           "id": 465,
           "isDone": false,
           "target": 0,
@@ -29,8 +29,88 @@
           "targetRate": 0
         },
         {
-          "subj": "Alan Eğitimi Testi %20",
+          "subj": "Nükleik Asitler, Genetik şifreler ve Protein Sentezi",
           "id": 564,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Hücre Zarının Yapısı ve Zarda Geçen Olaylar",
+          "id": 121,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Hücre Organelleri",
+          "id": 122,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Hücre Bölünmesi",
+          "id": 123,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Canlıların Sınıflandırılması",
+          "id": 124,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Canlılar Alemi",
+          "id": 125,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Ekoloji",
+          "id": 126,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Fotosentez",
+          "id": 127,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Hücresel Solunum",
+          "id": 128,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Bitkisel Dokular",
+          "id": 129,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Bitkilerde taşıma Sistemi",
+          "id": 1211,
           "isDone": false,
           "target": 0,
           "targetDone": 0,
