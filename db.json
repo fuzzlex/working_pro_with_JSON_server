@@ -115,6 +115,142 @@
           "target": 0,
           "targetDone": 0,
           "targetRate": 0
+        },
+        {
+          "subj": "Bitkilerde Beslenme Büyüme ve Hareket",
+          "id": 1212,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Bitkilerde üreme ve gelişme",
+          "id": 1213,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Canlılarda üreme ve gelişme",
+          "id": 1214,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Kalıtım",
+          "id": 1215,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Populasyon Genetiği",
+          "id": 1216,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Biyoteknoloji ve Genetik Mühendisliği",
+          "id": 1217,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Canlıların oluşumu ve evrimi",
+          "id": 1218,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Canlılarda Davranış",
+          "id": 1219,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Hayvansal Dokular",
+          "id": 1220,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Sinir Sistemi",
+          "id": 1221,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Duyu Organları",
+          "id": 1222,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Hormonlar ve Endokrin sistem",
+          "id": 1223,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Destek ve Hareket Sistemi",
+          "id": 1224,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Sindirim Sistemi",
+          "id": 1225,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Dolaşım Sistemi, Virüsler ve Bağışıklık Sist.",
+          "id": 1226,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Solunum Sistemi",
+          "id": 1227,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
+        },
+        {
+          "subj": "Boşaltım Sistemi",
+          "id": 1228,
+          "isDone": false,
+          "target": 0,
+          "targetDone": 0,
+          "targetRate": 0
         }
       ]
     },
