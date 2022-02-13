@@ -24,14 +24,14 @@ const Details = () => {
   useEffect ( async ()  => {
     listSubj.isDone = first
     console.log((newList))
-    await axios.put(`http://localhost:5000/dersler/${itemList.newId}`, newList)
+    await axios.put(`https://workingpro.herokuapp.com/dersler/${itemList.newId}`, newList)
   }, [first])
 
 
   const handleSubmitTarget = async (e) =>{
     e.preventDefault();
     listSubj.target =  parseInt(target);
-    await axios.put(`http://localhost:5000/dersler/${itemList.newId}`, newList)
+    await axios.put(`https://workingpro.herokuapp.com/dersler/${itemList.newId}`, newList)
     setTarget("")
 
   }
@@ -40,7 +40,7 @@ const Details = () => {
     listSubj.targetDone =  parseInt(targetDone) + parseInt(listSubj.targetDone);
     const rate =  listSubj.targetDone / listSubj.target * 100 
     listSubj.targetRate = parseFloat(rate);
-    await axios.put(`http://localhost:5000/dersler/${itemList.newId}`, newList)
+    await axios.put(`https://workingpro.herokuapp.com/dersler/${itemList.newId}`, newList)
     setTargetDone("")
   }  
   
@@ -51,7 +51,7 @@ const Details = () => {
     listSubj.targetRate = 0;
     listSubj.target = 0;
     listSubj.isDone = false;
-    await axios.put(`http://localhost:5000/dersler/${itemList.newId}`, newList)
+    await axios.put(`https://workingpro.herokuapp.com/dersler/${itemList.newId}`, newList)
     navigate("/alan", {state : {newId}})
   }  
 
