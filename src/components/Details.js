@@ -1,13 +1,12 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Alert, Button, Form, ProgressBar } from 'react-bootstrap';
-import { useDispatch, useSelector } from 'react-redux';
+import {  useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const Details = () => {
 
 
-  const dispatch = useDispatch();
   const navigate = useNavigate();
   const  filteredList  = useSelector(state =>state.Reducer.productList)
   const location = useLocation();
@@ -44,6 +43,8 @@ const Details = () => {
     await axios.put(`http://localhost:5000/dersler/${itemList.newId}`, newList)
     setTargetDone("")
   }  
+  
+  const newId = itemList.newId
   const handleReset = async (e) =>{
     e.preventDefault();
     listSubj.targetDone =  0;
@@ -54,7 +55,6 @@ const Details = () => {
   }  
 
 
-  const newId = itemList.newId
 
   return (
     <div>
