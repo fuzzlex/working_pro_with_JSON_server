@@ -83,8 +83,7 @@ const Details = () => {
 </Form>
     ))}
 
-    <Alert  variant= 'danger'>
-    <Form  onSubmit={handleSubmitTarget} >
+    <Form className='form-control'  onSubmit={handleSubmitTarget} >
     <Form.Group className='targetQua'   >
     <Form.Label className="form-label" >Hedef Soru Sayısı</Form.Label>
     <Form.Control  className="form-form" onChange= {(e) => setTarget(e.target.value)} value={target}  type="text" placeholder="Soru Sayısı" />
@@ -93,26 +92,23 @@ const Details = () => {
   </Button>
   </Form.Group>
     </Form>
-  </Alert>
 
-    <Alert variant= 'success'>
-    <Form onSubmit={handleSubmitTargetDone} >
+    <Form className='form-control' onSubmit={handleSubmitTargetDone} >
   <Form.Group className='targetQua'  >
     <Form.Label  className="form-label" >Çözülen Soru Sayısını Giriniz</Form.Label>
     <Form.Control  className="form-form"  onChange= {(e) => setTargetDone(e.target.value)} value={targetDone}  type="text" placeholder="Soru Sayısı" />
-    <Button className="form-buttons" variant="primary" type="submit">
+    <Button className="form-buttons"  type="submit">
     Hedefe Gönder
   </Button>
   </Form.Group>
  
 </Form>
-  </Alert>
 
 
-    <Alert className='m-0' variant= 'danger'>
-    Hedef : {listSubj.target !== 0 ? listSubj.target : "Hedef giriniz" } {" -  "}
-    Çözülen Soru Sayısı : {listSubj.targetDone !== 0 ? listSubj.targetDone : "0"}
-  <Button onClick={handleReset} size='sm' className='mx-4'>SIFIRLA</Button>
+    <Alert className='targetQua' >
+    <p>Hedef  {listSubj.target !== 0 ? listSubj.target : "Hedef giriniz" }</p>
+    <p>Çözülen Soru Sayısı  {listSubj.targetDone !== 0 ? listSubj.targetDone : "0"}</p>
+  <Button onClick={handleReset} className="form-buttons" >SIFIRLA</Button>
   </Alert>
   <ProgressBar className='progressBar' animated now={listSubj.targetRate} label={"% " + listSubj.targetRate} />
       </div>

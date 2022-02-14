@@ -23,11 +23,11 @@ const Home = () => {
   
 
   return (
-    <div className='home-container'>
-            <div className='home-buttons'>
+    <div >
+            <div className='home-container'>
             <h1 style={{textAlign:'center',marginBottom:"5rem"}}>ÇALIŞMA PROGRAMI</h1>
     {filteredList?.map(item => (
-      <Button key={item.id} onClick={() => handleAlan(item.id)}   variant="primary">{item.main}</Button>
+      <Button key={item.id} onClick={() => handleAlan(item.id)}  >{item.main}</Button>
 
     ))}
         

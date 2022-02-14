@@ -1,31 +1,66 @@
 .home-container{
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
 }
-.home-buttons Button{
+.home-container Button{
   width: 10rem;
   height: 10rem;
   margin: 1rem;
+  background-color: #005691;
+}
+.alan-all{
+  background-color: #D7FBE8;
+}
+.alan-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .alan-list-subj {
   margin: 0.4rem;
-  text-align: center;
-  color: rgb(255, 0, 170);
-  font-size: 1.1rem;
-  font-weight: 500;
-  letter-spacing: 2px;
   cursor: pointer;
-  background-color: rgba(0, 247, 255, 0.219);
+  background-color: #155263;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  width: 100vw;
+  height: 15vh;
+  border-radius: 1rem;
+}
+.alan-list-subj p{
+  color: #EFDAD7;
+  font-size: 10px;
+  font-weight: 900;
+  height: 5vh;
+  min-width:20vw ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+
+}
+.alan-buttons{
+  min-width: 20vw;
+  height: 5vh;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+
 }
 .progresBar{
-  min-width: 50vw;
+  min-width: 49vw;
+  margin-left: 0.5rem;
+  height: 5vh;
+  background-color: #E9E5D6;
 }
 .checkbox{
   font-size: large;
@@ -37,31 +72,40 @@
 }
 .progressBar{
   display: flex;
+  justify-content: flex-start;
+  background-color: rgb(43, 255, 0);
+  height: 6vh;
+  border-radius: 2rem;
+}
+.form-control{
+  display: flex;
   justify-content: center;
-  background-color: red;
+  align-items: center;
+
 }
 .targetQua{
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #655D8A;
-  padding: 1.8rem;
+  height: 15vh;
+  width: 100vw;
+  padding: 1.5rem;
+  color: #FDCEB9;
+  font-size: 12px;
 }
-.targetQua:first-child{
-  width: fit-content;
+.form-label{
   color: #FDCEB9;
   font-size: 12px;
 
 }
 .form-form{
-  width: 30vw;
   background-color:  #FDCEB9;
   font-size: 12px;
+  width: 35vw;
 
 }
 .form-buttons{
-  width: 20vw;
-  height: 5.5vh;
   font-size: 12px;
   margin-left: 1rem;
   display: flex;
@@ -69,4 +113,6 @@
   justify-content: center;
   background-color: #FDCEB9;
   color: #1A1A40;
+  width: 40vw;
+  height: 5vh;
 }

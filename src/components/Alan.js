@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Button, ListGroup, ProgressBar } from "react-bootstrap";
+import { Button, ListGroup, ListGroupItem, ProgressBar } from "react-bootstrap";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { fetchAllData } from "../redux/actions/SubjActions";
@@ -7,9 +7,9 @@ import { fetchAllData } from "../redux/actions/SubjActions";
 const Alan = () => {
   const navigate = useNavigate();
 
-  useEffect( () => {
-    fetchAllData()
-   }, []);
+  useEffect(() => {
+    fetchAllData();
+  }, []);
 
   const filteredList = useSelector((state) => state.Reducer.productList);
   const location = useLocation();
@@ -26,19 +26,22 @@ const Alan = () => {
   const [newData] = filteredList?.filter((e) => {
     return e.id === newId;
   });
-  console.log(filteredList)
+  console.log(filteredList);
 
   return (
-    <div>
+    <div className='alan-all'>
+
+      <ListGroup className="alan-list">
+                
       <Button
-        style={{ marginLeft: "3rem", marginTop: "1rem" }}
         onClick={() => navigate("/")}
       >
         GERİ
       </Button>
-      <ListGroup className="alan-list">
-        <ListGroup.Item style={{ textAlign: "center" }}>
-          {newData.main} Bilgisi Konuları
+
+        <ListGroup.Item style={{ textAlign: "center", backgroundColor:"#FC4F4F" }}>
+
+      {newData.main} Bilgisi Konuları
         </ListGroup.Item>
 
         {newData.subjects?.map((task) => (
@@ -48,10 +51,23 @@ const Alan = () => {
             className="alan-list-subj"
             variant="dark"
           >
-            {task.subj}
-            <ProgressBar className="progresBar" animated now={task.targetRate} label={task.target !== 0 ? "% " + task.targetRate : "Henüz Başlatılmadı"} />
-            <Button className='m-2' variant={task.isDone ? "success" : "danger"}>{task.isDone ? "Konu Tamamlandı" : "Konu eksik"}</Button>
+            <p>{task.subj}</p>
+            <Button className='alan-buttons' variant={task.isDone ? "success" : "danger"}>
+              {task.isDone ? "Konu Tamamlandı" : "Konu eksik"}
+            </Button>
+            <ProgressBar
+              className="progresBar"
+              animated
+              now={task.targetRate}
+              label={
+                task.target !== 0
+                  ? "% " + task.targetRate
+                  : "Henüz Başlatılmadı"
+              }
+            />
           </ListGroup.Item>
+
+
         ))}
       </ListGroup>
     </div>
