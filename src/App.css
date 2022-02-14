@@ -28,7 +28,7 @@
   min-width: 50vw;
 }
 .checkbox{
-  font-size: larger;
+  font-size: large;
   font-weight: 900;
 
 }
@@ -40,8 +40,33 @@
   justify-content: center;
   background-color: red;
 }
-/* .targetQua{
+.targetQua{
   display: flex;
   justify-content: space-between;
   align-items: center;
-} */
+  background-color: #655D8A;
+  padding: 1.8rem;
+}
+.targetQua:first-child{
+  width: fit-content;
+  color: #FDCEB9;
+  font-size: 12px;
+
+}
+.form-form{
+  width: 30vw;
+  background-color:  #FDCEB9;
+  font-size: 12px;
+
+}
+.form-buttons{
+  width: 20vw;
+  height: 5.5vh;
+  font-size: 12px;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FDCEB9;
+  color: #1A1A40;
+}

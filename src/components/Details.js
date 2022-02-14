@@ -85,28 +85,24 @@ const Details = () => {
 
     <Alert  variant= 'danger'>
     <Form  onSubmit={handleSubmitTarget} >
-    <Form.Group  className='targetQua' >
-    <Row className='targetQua' >
-    <Form.Label className="mx-3" as={Col}>Hedef Soru Sayısı</Form.Label>
-    <Form.Control as={Col} size='sm' onChange= {(e) => setTarget(e.target.value)} value={target}  type="text" placeholder="Soru Sayısı" />
-    <Button size='sm' as={Col} className="mx-5" variant="primary" type="submit">
+    <Form.Group className='targetQua'   >
+    <Form.Label className="form-label" >Hedef Soru Sayısı</Form.Label>
+    <Form.Control  className="form-form" onChange= {(e) => setTarget(e.target.value)} value={target}  type="text" placeholder="Soru Sayısı" />
+    <Button className="form-buttons"  variant="primary" type="submit">
     Hedefe Gönder
   </Button>
-  </Row>
   </Form.Group>
     </Form>
   </Alert>
 
     <Alert variant= 'success'>
     <Form onSubmit={handleSubmitTargetDone} >
-  <Form.Group  >
-  <Row className='targetQua' >
-    <Form.Label  className="mx-3" as={Col}>Çözülen Soru Sayısını Giriniz</Form.Label>
-    <Form.Control as={Col} size='sm'  onChange= {(e) => setTargetDone(e.target.value)} value={targetDone}  type="text" placeholder="Soru Sayısı" />
-    <Button size='sm' as={Col} className="mx-5" variant="primary" type="submit">
+  <Form.Group className='targetQua'  >
+    <Form.Label  className="form-label" >Çözülen Soru Sayısını Giriniz</Form.Label>
+    <Form.Control  className="form-form"  onChange= {(e) => setTargetDone(e.target.value)} value={targetDone}  type="text" placeholder="Soru Sayısı" />
+    <Button className="form-buttons" variant="primary" type="submit">
     Hedefe Gönder
   </Button>
-  </Row>
   </Form.Group>
  
 </Form>
