@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Alert, Button, Form, ProgressBar } from 'react-bootstrap';
+import { Alert, Button, Col, Form, ProgressBar, Row } from 'react-bootstrap';
 import {  useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
 
@@ -83,27 +83,32 @@ const Details = () => {
 </Form>
     ))}
 
-    <Alert variant= 'danger'>
-    <Form onSubmit={handleSubmitTarget} style={{textAlign:'center'}}>
-    <Form.Group  className="mb-1" >
-    <Form.Label>Hedef Soru Sayısı</Form.Label>
-    <Form.Control onChange= {(e) => setTarget(e.target.value)} value={target}  type="text" placeholder="Soru Sayısı" />
-    <Button className="m-1" variant="primary" type="submit">
+    <Alert  variant= 'danger'>
+    <Form  onSubmit={handleSubmitTarget} >
+    <Form.Group  className='targetQua' >
+    <Row className='targetQua' >
+    <Form.Label className="mx-3" as={Col}>Hedef Soru Sayısı</Form.Label>
+    <Form.Control as={Col} size='sm' onChange= {(e) => setTarget(e.target.value)} value={target}  type="text" placeholder="Soru Sayısı" />
+    <Button size='sm' as={Col} className="mx-5" variant="primary" type="submit">
     Hedefe Gönder
   </Button>
+  </Row>
   </Form.Group>
     </Form>
   </Alert>
 
     <Alert variant= 'success'>
-    <Form onSubmit={handleSubmitTargetDone} style={{textAlign:'center'}}>
-  <Form.Group  className="mb-1" controlId="formBasicEmail">
-    <Form.Label>Çözülen Soru Sayısını Giriniz</Form.Label>
-    <Form.Control onChange= {(e) => setTargetDone(e.target.value)} value={targetDone}  type="text" placeholder="Soru Sayısı" />
-  </Form.Group>
-  <Button className="m-1" variant="primary" type="submit">
+    <Form onSubmit={handleSubmitTargetDone} >
+  <Form.Group  >
+  <Row className='targetQua' >
+    <Form.Label  className="mx-3" as={Col}>Çözülen Soru Sayısını Giriniz</Form.Label>
+    <Form.Control as={Col} size='sm'  onChange= {(e) => setTargetDone(e.target.value)} value={targetDone}  type="text" placeholder="Soru Sayısı" />
+    <Button size='sm' as={Col} className="mx-5" variant="primary" type="submit">
     Hedefe Gönder
   </Button>
+  </Row>
+  </Form.Group>
+ 
 </Form>
   </Alert>
 
