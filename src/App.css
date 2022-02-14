@@ -48,7 +48,7 @@
 }
 .alan-buttons{
   min-width: 20vw;
-  height: 5vh;
+  height: 8vh;
   font-size: 12px;
   display: flex;
   align-items: center;
@@ -114,5 +114,5 @@
   background-color: #FDCEB9;
   color: #1A1A40;
   width: 40vw;
-  height: 5vh;
+  height: 7vh;
 }
